@@ -3,7 +3,7 @@ module.exports = {
     title: `How I Dev`,
     author: `Erik Nelson`,
     description: `How do I dev? How do YOU dev?`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://howidev.com/`,
     social: {
       twitter: `howidev`,
     },
@@ -50,7 +50,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-34484653-2`,
       },
     },
     `gatsby-plugin-feed`,
