@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "howidev",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "A compilation of how devs do dev'ing",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Erik Nelson <erik@ejnelson.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/ejnelson/howidev/issues"
   },
   "dependencies": {
     "gatsby": "^2.16.1",
