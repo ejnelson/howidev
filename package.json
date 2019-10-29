@@ -8,8 +8,12 @@
     "url": "https://github.com/ejnelson/howidev/issues"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.23",
+    "emotion-theming": "^10.0.19",
     "gatsby": "^2.16.1",
     "gatsby-image": "^2.2.29",
+    "gatsby-plugin-emotion": "^4.1.13",
     "gatsby-plugin-feed": "^2.3.18",
     "gatsby-plugin-google-analytics": "^2.1.23",
     "gatsby-plugin-manifest": "^2.2.23",
@@ -33,7 +37,7 @@
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
     "typography": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "typography-theme-github": "^0.16.19"
   },
   "devDependencies": {
     "eslint": "^6.1.0",
