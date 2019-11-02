@@ -1,17 +1,18 @@
 const brand = {
-  primary: '#573EDE',
-  secondary: '#EEF4F2',
+  primary: '#50a5fa',
+  primary_light: '#9bcbfa',
+  primary_dark: '#316da8',
+  primary_ultra_light: '#c2e0fc',
 }
 
 const colors = {
-  primary_light: `'#573EDE'`,
   gray: '#D3D3D3',
   black: '#000',
   white: '#fff',
-  bg_color: '#',
-  body_color: '#222426',
+  bg_color: '#011627',
+  body_color: '#fff',
   link_color: brand.primary,
-  link_color_hover: `'#775EDE'`,
+  link_color_hover: brand.primary_dark,
   red: '#E75248',
   green: '#17A974',
   blue: '#327CDC',

@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import {Global, css} from '@emotion/core'
+import styled from '@emotion/styled'
 import {ThemeProvider} from 'emotion-theming'
 import theme from '../../config/theme'
 import {rhythm, scale} from '../utils/typography'
@@ -8,11 +9,6 @@ import {bpMaxSM} from '../lib/breakpoints'
 import reset from '../lib/reset'
 
 export const globalStyles = css`
-  .mainLink {
-    boxshadow: none;
-    textdecoration: none;
-    color: ${theme.colors.red};
-  }
   ${bpMaxSM} {
     h1 {
       font-size: 30px;
@@ -21,8 +17,21 @@ export const globalStyles = css`
       font-size: 24px;
     }
   }
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
 
   ${reset};
+`
+const StyledLink = styled(Link)`
+  color: ${theme.brand.primary_ultra_light};
+  box-shadow: none;
+  text-decoration: none;
+  &:hover {
+    color: ${theme.brand.primary_light};
+  }
 `
 
 class Layout extends React.Component {
@@ -40,9 +49,7 @@ class Layout extends React.Component {
             marginTop: 0,
           }}
         >
-          <Link className="mainLink" to={`/`}>
-            {title} ❔ 👁️ 💻
-          </Link>
+          <StyledLink to={`/`}>{title} ❔ 👁️ 💻</StyledLink>
         </h1>
       )
     } else {
@@ -53,16 +60,7 @@ class Layout extends React.Component {
             marginTop: 0,
           }}
         >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
+          <StyledLink to={`/`}>{title}</StyledLink>
         </h3>
       )
     }

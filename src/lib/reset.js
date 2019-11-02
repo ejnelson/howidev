@@ -60,13 +60,14 @@ const reset = css`
     }
   }
   blockquote {
-    border-left: 5px solid ${theme.colors.link_color};
+    border-left: 5px solid ${theme.brand.primary_light};
     padding-left: 1rem !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
     font-style: italic;
     p {
-      line-height: 1.3 !important;
+      line-height: 1.4 !important;
+      color: ${theme.brand.primary_light} !important;
     }
   }
   [tabindex='-1']:focus {
