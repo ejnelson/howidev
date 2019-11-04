@@ -40,6 +40,8 @@
     "typography-theme-github": "^0.16.19"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
+    "babel-preset-gatsby": "^0.2.20",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.5.0",

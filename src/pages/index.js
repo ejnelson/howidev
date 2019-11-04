@@ -1,23 +1,49 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Link, graphql} from 'gatsby'
-
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import {rhythm} from '../utils/typography'
 
-class BlogIndex extends React.Component {
-  render() {
-    const {data, location} = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+function BlogIndex(props) {
+  const {data, location} = props
+  const siteTitle = data.site.siteMetadata.title
+  const posts = data.allMarkdownRemark.edges
 
-    return (
-      <Layout location={location} title={siteTitle}>
-        <SEO title="All posts" />
-        <Bio />
-        {posts.map(({node}) => {
+  const [search, setSearch] = useState('')
+
+  const searchFilter = node => {
+    const {tags, title, author} = node.frontmatter
+    const tagsFound = tags?.some(tag => tag.toLowerCase().startsWith(search))
+    const titleFound = title?.toLowerCase().includes(search)
+    const authorFound = author?.toLowerCase().startsWith(search)
+    return tagsFound || titleFound || authorFound
+  }
+
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO title="All posts" />
+      <Bio />
+      <form>
+        <label>
+          Search:
+          <input
+            type="text"
+            value={search}
+            onChange={e => setSearch(e.target.value.toLowerCase())}
+          />
+        </label>
+      </form>
+      {posts
+        .filter(({node}) => searchFilter(node))
+        .map(({node}) => {
           const title = node.frontmatter.title || node.fields.slug
+          const author = node.frontmatter.author || node.fields.slug
+
+          console.log('node', node.fields.slug)
+          console.log('author', node.frontmatter.author)
+
+          const tags = node.frontmatter.tags || node.fields.slug
           return (
             <article key={node.fields.slug}>
               <header>
@@ -27,7 +53,7 @@ class BlogIndex extends React.Component {
                   }}
                 >
                   <Link style={{boxShadow: `none`}} to={node.fields.slug}>
-                    {title}
+                    {author}
                   </Link>
                 </h3>
                 <small>{node.frontmatter.date}</small>
@@ -42,9 +68,8 @@ class BlogIndex extends React.Component {
             </article>
           )
         })}
-      </Layout>
-    )
-  }
+    </Layout>
+  )
 }
 
 export default BlogIndex
@@ -66,7 +91,9 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            author
             description
+            tags
           }
         }
       }
