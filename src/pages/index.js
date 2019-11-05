@@ -82,7 +82,7 @@ function BlogIndex(props) {
               {node.frontmatter.headShot && (
                 <Img
                   css={css`
-                    width: 80px;
+                    min-width: 80px;
                     height: 80px;
                     border-radius: 50%;
                   `}
@@ -91,7 +91,8 @@ function BlogIndex(props) {
               )}
               <div
                 css={css`
-                  width: ${rhythm(16)};
+                  max-width: ${rhythm(16)};
+                  margin-left: ${rhythm(1 / 2)};
                 `}
               >
                 <header>
