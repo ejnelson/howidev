@@ -42,15 +42,25 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
+        <div
+          css={css`
+            display: flex;
+            justify-content: space-between;
+          `}
         >
-          <StyledLink to={`/`}>{title} ❔ 👁️ 💻</StyledLink>
-        </h1>
+          <h1
+            style={{
+              ...scale(1.5),
+              marginBottom: rhythm(0.5),
+              marginTop: 0,
+            }}
+          >
+            <StyledLink to={`/`}>{title}</StyledLink>
+          </h1>
+          <h3>
+            <Link>about</Link>
+          </h3>
+        </div>
       )
     } else {
       header = (
@@ -78,7 +88,11 @@ class Layout extends React.Component {
         >
           <header>{header}</header>
           <main>{children}</main>
-          <footer>
+          <footer
+            style={{
+              padding: `${rhythm(1.5)} 0`,
+            }}
+          >
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>

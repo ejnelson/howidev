@@ -37,28 +37,14 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
-        marginBottom: rhythm(2.5),
+        marginBottom: rhythm(0.5),
       }}
     >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author}
-        style={{
-          marginRight: rhythm(1 / 2),
-          marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`,
-        }}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
-      />
       <p>
-        Written by <strong>{author}</strong> who lives and works in Minneapolis
-        building useful things.
-        {` `}
+        ❔ 👁️ 💻 is a blog devicated to the deds.
+        <br />
         <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
+          Twitter: @{social.twitter}
         </a>
       </p>
     </div>

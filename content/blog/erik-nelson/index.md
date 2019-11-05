@@ -1,7 +1,8 @@
 ---
 author: 'Erik Nelson'
-date: '2019-11-04T16:40:32.169Z'
+date: '2019-11-04'
 tags: ['developer', 'depression', 'upsilon']
+headShot: './images/erik-nelson.jpg'
 description: I'm Erik Nelson, a developer at Optum, and this is How I Dev.
 ---
 
