@@ -6,7 +6,7 @@ import {rhythm, scale} from '../utils/typography'
 import Img from 'gatsby-image'
 import {css} from '@emotion/core'
 import theme from '../../config/theme'
-import {transparentize} from 'polished'
+import {transparentize, lighten} from 'polished'
 
 function BlogIndex(props) {
   const {data, location} = props
@@ -40,10 +40,10 @@ function BlogIndex(props) {
             margin: 0 ${rhythm(1 / 2)};
             width: ${rhythm(12)};
             background-color: inherit;
-            border-style: dotted;
-            border-color: ${theme.colors.green};
+            border-bottom: dotted;
+            border-color: ${theme.colors.primary_light};
             border-width: 0 0 ${rhythm(1 / 8)} 0;
-            color: ${theme.colors.green};
+            color: ${theme.colors.primary_light};
             &:focus {
               outline: none;
             }
@@ -67,16 +67,17 @@ function BlogIndex(props) {
               css={css`
                 display: flex;
                 align-items: center;
-                border: 1px solid ${theme.colors.primary_ultra_light};
+                /* border: 1px solid ${theme.brand.primary_ultra_light}; */
                 border-radius: 15px;
                 padding: 0 ${rhythm(1 / 2)};
+                background-color: ${lighten(0.05, theme.colors.background)};
                 margin: ${rhythm(1 / 2)} 0;
                 &:hover {
                   /* background-color: ${transparentize(
                     0.9,
                     theme.colors.primary_ultra_light,
                   )}; */
-                  transform: scale(1.02);
+                  transform: scale(1.05);
                 }
               `}
             >
@@ -100,7 +101,7 @@ function BlogIndex(props) {
                 <header>
                   <h3
                     css={css`
-                      color: ${theme.brand.primary};
+                      color: ${theme.colors.primary_light};
                       margin: ${rhythm(1 / 2)} 0 0;
                     `}
                   >
@@ -110,11 +111,13 @@ function BlogIndex(props) {
                 <section
                   css={css`
                     color: ${theme.colors.body_color};
+                    display: flex;
+                    flex-direction: column;
                   `}
                 >
                   <small
                     css={css`
-                      margin: 0;
+                      margin: ${rhythm(1 / 10)} 0;
                     `}
                   >
                     📅{` `}

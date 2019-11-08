@@ -1,11 +1,20 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
 import Img from 'gatsby-image'
+import styled from '@emotion/styled'
 import {css} from '@emotion/core'
+import theme from '../../config/theme'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import {rhythm, scale} from '../utils/typography'
+
+const Tag = styled.span`
+  padding: 0 ${rhythm(1 / 2)};
+  border: 1px solid ${theme.colors.primary_light};
+  margin: ${rhythm(1 / 8)};
+  border-radius: 10px;
+`
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -24,7 +33,6 @@ class BlogPostTemplate extends React.Component {
               justify-content: center;
             `}
           >
-            {tags}
             {headShot && (
               <Img
                 css={css`
@@ -44,7 +52,53 @@ class BlogPostTemplate extends React.Component {
             </h1>
             <p css={css``}>{post.frontmatter.date}</p> */}
           </header>
-          <section dangerouslySetInnerHTML={{__html: post.html}} />
+          <div
+            css={css`
+              display: flex;
+              justify-content: space-evenly;
+              margin: ${rhythm(1)} 0;
+              flex-wrap: wrap;
+            `}
+          >
+            {tags.map((tag, index) => (
+              <Tag key={index}>{tag}</Tag>
+            ))}
+          </div>
+          <section
+            css={css`
+              h1 {
+                color: ${theme.brand.primary};
+                margin-bottom: ${rhythm(1)};
+              }
+              h2 {
+                color: ${theme.colors.primary_light};
+                margin-bottom: ${rhythm(1)};
+              }
+              h3 {
+                color: ${theme.colors.primary_light};
+                margin-bottom: ${rhythm(1 / 2)};
+              }
+              h4 {
+                color: ${theme.colors.primary_light};
+                margin-bottom: ${rhythm(1 / 4)};
+                ${scale(0.1)};
+                font-weight: 800;
+              }
+              p {
+                margin-bottom: ${rhythm(1 / 2)};
+              }
+              strong {
+                color: ${theme.colors.primary_light};
+              }
+              hr {
+                border-top: ${rhythm(1 / 8)} dotted
+                  ${theme.colors.primary_light};
+
+                color: white;
+              }
+            `}
+            dangerouslySetInnerHTML={{__html: post.html}}
+          />
           <hr
             css={css`
               margin-bottom: ${rhythm(1)};

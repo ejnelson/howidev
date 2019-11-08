@@ -17,6 +17,9 @@ export const globalStyles = css`
       font-size: 24px;
     }
   }
+  small {
+    font-size: 10px;
+  }
   a {
     &:hover {
       text-decoration: none;

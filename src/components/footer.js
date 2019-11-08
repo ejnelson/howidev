@@ -22,6 +22,11 @@ const StyledImg = styled.img`
   }
 `
 
+const StyledA = styled.a`
+  padding: ${rhythm(1 / 3)};
+  margin-bottom: 0;
+`
+
 const Footer = () => {
   const data = useStaticQuery(graphql`
     query FooterQuery {
@@ -46,15 +51,16 @@ const Footer = () => {
         margin-bottom: rhythm(0.5);
       `}
     >
-      <a href={`https://twitter.com/${social.twitter}`}>
+      {/* icons are from https://simpleicons.org/ */}
+      <StyledA href={`https://twitter.com/${social.twitter}`}>
         <StyledImg src={twitterIcon} alt={'twitter'} />
-      </a>
-      <a href={`${social.github}`}>
+      </StyledA>
+      <StyledA href={`${social.github}`}>
         <StyledImg src={githubIcon} alt={'github'} />
-      </a>
-      <a href={`${social.rss}`}>
+      </StyledA>
+      <StyledA href={`${social.rss}`}>
         <StyledImg src={rssIcon} alt={'rss'} />
-      </a>
+      </StyledA>
     </footer>
   )
 }

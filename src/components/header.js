@@ -29,10 +29,10 @@ const Header = ({location, title}) => {
           ${scale(1.5)}
         `}
       >
-        <StyledLink to={`/`}>{title}</StyledLink>
+        <Link to={`/`}>{title}</Link>
       </h1>
       <h3>
-        <Link to={`/about`}>about</Link>
+        <StyledLink to={`/about`}>about</StyledLink>
       </h3>
     </div>
   ) : (
@@ -49,12 +49,12 @@ const Header = ({location, title}) => {
           transform-origin: left;
         `}
       >
-        <StyledLink to={`/`}>{title}</StyledLink>
+        <Link to={`/`}>{title}</Link>
       </h3>
 
       {location.pathname !== '/about' && (
         <h4>
-          <Link to={`/about`}>about</Link>
+          <StyledLink to={`/about`}>about</StyledLink>
         </h4>
       )}
     </div>
