@@ -1,24 +1,22 @@
+import {darken, lighten} from 'polished'
+
 const brand = {
   primary: '#50a5fa',
-  primary_light: '#9bcbfa',
-  primary_dark: '#316da8',
-  primary_ultra_light: '#c2e0fc',
+  secondary: '#EEF4F2',
 }
 
 const colors = {
+  primary_light: `${lighten(0.1, brand.primary)}`,
+  primary_ultra_light: `${lighten(0.25, brand.primary)}`,
+  primary_dark: `${darken(0.2, brand.primary)}`,
   gray: '#D3D3D3',
   black: '#000',
   white: '#fff',
-  bg_color: '#011627',
+  background: '#011627',
   body_color: '#fff',
   link_color: brand.primary,
-  link_color_hover: brand.primary_dark,
-  red: '#E75248',
+  link_color_hover: `${darken(0.3, brand.primary)}`,
   green: '#17A974',
-  blue: '#327CDC',
-  yellow: '#FFB700',
-  purple: '#8242F6',
-  purple_dark: '#231c42',
 }
 
 const theme = {

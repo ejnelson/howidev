@@ -6,6 +6,8 @@ module.exports = {
     siteUrl: `https://howidev.com/`,
     social: {
       twitter: `howidev`,
+      github: `https://github.com/ejnelson/howidev`,
+      rss: `/rss.xml`,
     },
   },
   plugins: [
@@ -63,7 +65,7 @@ module.exports = {
         background_color: `#212121`,
         theme_color: `#82AAFF`,
         display: `minimal-ui`,
-        icon: `content/assets/laptop.png`,
+        icon: `src/images/laptop.png`,
       },
     },
     `gatsby-plugin-offline`,

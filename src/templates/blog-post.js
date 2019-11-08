@@ -1,8 +1,8 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
 import Img from 'gatsby-image'
+import {css} from '@emotion/core'
 
-import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import {rhythm, scale} from '../utils/typography'
@@ -13,56 +13,54 @@ class BlogPostTemplate extends React.Component {
     const post = data.markdownRemark
     const siteTitle = data.site.siteMetadata.title
     const {previous, next} = pageContext
-
+    const {title, description, tags, headShot} = post.frontmatter
     return (
       <Layout location={location} title={siteTitle}>
-        <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
-        />
+        <SEO title={title} description={description || post.excerpt} />
         <article>
-          <header>
-            <h1
-              style={{
-                marginTop: rhythm(1),
-                marginBottom: 0,
-              }}
+          <header
+            css={css`
+              display: flex;
+              justify-content: center;
+            `}
+          >
+            {tags}
+            {headShot && (
+              <Img
+                css={css`
+                  height: 220px;
+                  width: 220px;
+                  border-radius: 50%;
+                `}
+                fluid={headShot.childImageSharp.fluid}
+              />
+            )}
+            {/* <h1
+              css={css`
+                margin: 0 0;
+              `}
             >
               {post.frontmatter.author}
             </h1>
-            <p
-              style={{
-                ...scale(-1 / 5),
-                display: `block`,
-                marginBottom: rhythm(1),
-              }}
-            >
-              {post.frontmatter.date}
-            </p>
+            <p css={css``}>{post.frontmatter.date}</p> */}
           </header>
-          {post.frontmatter.headShot && (
-            <Img fluid={post.frontmatter.headShot.childImageSharp.fluid} />
-          )}
           <section dangerouslySetInnerHTML={{__html: post.html}} />
           <hr
-            style={{
-              marginBottom: rhythm(1),
-            }}
+            css={css`
+              margin-bottom: ${rhythm(1)};
+            `}
           />
-          <footer>
-            <Bio />
-          </footer>
         </article>
 
         <nav>
           <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: 0,
-            }}
+            css={css`
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              list-style: none;
+              padding: 0;
+            `}
           >
             <li>
               {previous && (
@@ -104,6 +102,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         author
+        tags
         headShot {
           childImageSharp {
             fluid {

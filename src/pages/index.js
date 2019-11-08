@@ -1,12 +1,12 @@
 import React, {useState} from 'react'
 import {Link, graphql} from 'gatsby'
-import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import {rhythm} from '../utils/typography'
+import {rhythm, scale} from '../utils/typography'
 import Img from 'gatsby-image'
 import {css} from '@emotion/core'
 import theme from '../../config/theme'
+import {transparentize} from 'polished'
 
 function BlogIndex(props) {
   const {data, location} = props
@@ -28,7 +28,6 @@ function BlogIndex(props) {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      {/* <Bio /> */}
       <form
         css={css`
           display: flex;
@@ -41,6 +40,7 @@ function BlogIndex(props) {
             margin: 0 ${rhythm(1 / 2)};
             width: ${rhythm(12)};
             background-color: inherit;
+            border-style: dotted;
             border-color: ${theme.colors.green};
             border-width: 0 0 ${rhythm(1 / 8)} 0;
             color: ${theme.colors.green};
@@ -67,15 +67,16 @@ function BlogIndex(props) {
               css={css`
                 display: flex;
                 align-items: center;
-                justify-content: space-around;
-                transition: all 0.3s ease-in-out;
-                border: 1px solid ${theme.brand.primary_ultra_light};
+                border: 1px solid ${theme.colors.primary_ultra_light};
                 border-radius: 15px;
                 padding: 0 ${rhythm(1 / 2)};
                 margin: ${rhythm(1 / 2)} 0;
                 &:hover {
+                  /* background-color: ${transparentize(
+                    0.9,
+                    theme.colors.primary_ultra_light,
+                  )}; */
                   transform: scale(1.02);
-                  /* box-shadow: 0px 0px 5px 5px rgba(256, 256, 256, 0.3); */
                 }
               `}
             >
@@ -85,13 +86,14 @@ function BlogIndex(props) {
                     min-width: 80px;
                     height: 80px;
                     border-radius: 50%;
+                    margin: 0 ${rhythm(1 / 2)};
                   `}
                   fluid={node.frontmatter.headShot.childImageSharp.fluid}
                 />
               )}
               <div
                 css={css`
-                  max-width: ${rhythm(16)};
+                  max-width: ${rhythm(24)};
                   margin-left: ${rhythm(1 / 2)};
                 `}
               >
@@ -99,7 +101,7 @@ function BlogIndex(props) {
                   <h3
                     css={css`
                       color: ${theme.brand.primary};
-                      margin-bottom: ${rhythm(1 / 4)};
+                      margin: ${rhythm(1 / 2)} 0 0;
                     `}
                   >
                     {author}
@@ -107,10 +109,17 @@ function BlogIndex(props) {
                 </header>
                 <section
                   css={css`
-                    color: ${theme.colors.white};
+                    color: ${theme.colors.body_color};
                   `}
                 >
-                  <small>{node.frontmatter.date}</small>
+                  <small
+                    css={css`
+                      margin: 0;
+                    `}
+                  >
+                    📅{` `}
+                    {node.frontmatter.date}
+                  </small>
                   <p
                     dangerouslySetInnerHTML={{
                       __html: node.frontmatter.description || node.excerpt,
@@ -142,7 +151,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "MM-DD-YYYY")
             title
             author
             description

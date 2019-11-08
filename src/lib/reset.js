@@ -32,7 +32,7 @@ const reset = css`
   }
   body {
     color: ${theme.colors.body_color};
-    background-color: ${theme.colors.bg_color};
+    background-color: ${theme.colors.background};
   }
   ::selection {
     color: ${theme.colors.white};
@@ -167,6 +167,13 @@ const reset = css`
   }
   [hidden] {
     display: none !important;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+    padding: 0;
   }
 `
 
