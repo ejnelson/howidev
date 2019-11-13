@@ -8,7 +8,7 @@ developers might be too. You could get inspiration from this project by
 1. being able to contribute to an open source project (Pull requests welcome)
 2. being able to contribute to the blog (best way to contribute is to actually
    make a pull request with your blog entry, I will take email-entries though as
-   well erik@ejnelson.com)
+   well hello@howidev.com)
 3. reading the blog posts of other developers
 
 I'm using netlify to deploy to my domain from github. Any time the master branch
