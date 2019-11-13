@@ -16,9 +16,9 @@ of this github repo updates, netlify triggers a new build automagically and
 deploys to my domain hosted on google domains! (I'm paying 12\$ a year for this
 website)
 
-Also, my inspiration for starting this was my own lack of inspiration, along with lifehacker.com's ['This is how I work'](https://lifehacker.com/c/how-i-work) series. This idea is almost a direct rip-off of that so check that out too!
-
 [![Netlify Status](https://api.netlify.com/api/v1/badges/92ca3dfb-e5c1-4715-880f-39ef318821e3/deploy-status)](https://app.netlify.com/sites/howidev/deploys)
+
+Also, my inspiration for starting this was my own lack of inspiration, along with lifehacker.com's ['This is how I work'](https://lifehacker.com/c/how-i-work) series. This idea is almost a direct rip-off of that so check that out too!
 
 I'm stealing much of this readme template from the original gatsby starter
 readme that came with the project when i used the gatsby cli tool to start the
