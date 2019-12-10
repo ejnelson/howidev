@@ -11,14 +11,15 @@ developers might be too. You could get inspiration from this project by
    well hello@howidev.com)
 3. reading the blog posts of other developers
 
+
 I'm using netlify to deploy to the howidev.com domain from github. Any time the master branch
 of this github repo updates, netlify triggers a new build automagically and
 deploys to my domain hosted on google domains! (I'm paying 12\$ a year for this
 website)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/92ca3dfb-e5c1-4715-880f-39ef318821e3/deploy-status)](https://app.netlify.com/sites/howidev/deploys)
-[![MIT License][license-badge]][license]
-[![PRs Welcome][prs-badge]][prs]
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com/)
+[![GitHub](https://img.shields.io/github/license/ejnelson/howidev?style=flat-square)](https://github.com/ejnelson/howidev/blob/master/LICENSE)
 
 Also, my inspiration for starting this was my own lack of inspiration, along with lifehacker.com's ['This is how I work'](https://lifehacker.com/c/how-i-work) series. This idea is almost a direct rip-off of that so check that out too!
 
