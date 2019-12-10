@@ -1,28 +1,29 @@
 ---
 author: 'Erik Nelson'
-date: '2019-11-10'
+date: '2019-12-10'
 tags:
   [
     'developer',
     'depression',
     'upsilon',
-    'fun',
-    'other stuff',
-    'i really like to code',
-    'oh my gosh this is so cool',
+    'Target',
+    'Optum',
+    'Best Buy',
+    'Parent',
   ]
 headShot: './images/erik-nelson.jpg'
-description: I'm Erik Nelson, a developer at Optum, and this is How I Dev.
+description: I'm Erik Nelson, a developer at Target, and this is How I Dev.
 ---
 
-# Hello, I am Erik Nelson, a developer at Optum and this is How I Dev
+# Hello, I am Erik Nelson, a developer at Target and this is How I Dev
 
 ---
 
-### 💻 Prompt and Precise
-
-**Current gig:** developer  
+**Current gig:** Custom Software Developer at Whoastorm LLC 🌨 (currently
+contracted by Target)  
 **Location:** Minneapolis  
+**Current computer:** I7 pixelbook  
+**Current mobile device:** Pixel 3 xl
 **One word that describes how you dev:** empathetically
 
 ---
@@ -33,11 +34,11 @@ description: I'm Erik Nelson, a developer at Optum, and this is How I Dev.
 
 i like to think of myself as a dreamer.
 
-#### How did you end up going to Prime?
+#### How did you end up starting a career in software?
 
 i was a bit unhappy with my career as a mech e
 
-#### What are you currently building (personally)?
+#### What are you currently building or learning (personally)?
 
 I'm building this website for everyone to be inspired
 by!!!!!!!!!!!!!!!!!!!!!!!!!!! Let's all be inspired together!!!!!!!!!!
@@ -45,6 +46,10 @@ by!!!!!!!!!!!!!!!!!!!!!!!!!!! Let's all be inspired together!!!!!!!!!!
 #### What is one challenging, unusual, or finicky process you have in place for your day-to-day?
 
 working out at 5 am!
+
+#### What apps, gadgets, or tools can't you live without?
+
+#### How do you recharge or take a break?
 
 ---
 
@@ -78,7 +83,7 @@ netflix
 
 i don't know much yet
 
-#### What are you currently building (professionally)?
+#### What are you currently building or learning (professionally)?
 
 chat app
 
@@ -90,19 +95,15 @@ about reactive reactivity
 
 ---
 
-### 💻 Prime-ish
+### 💻 Introspective
 
-#### Anything to share with current/potential Primers?
+#### Anything to share with current/potential developers?
 
 go hard, you can do it
 
-#### Hardest realization after leaving Prime?
+#### Hardest realization after starting your journey?
 
 i don't know anything, (neither does anyone else)
-
-#### Who else would you like to see answer these questions?
-
-Dev Jana!
 
 #### What is the best advice you've ever received?
 
@@ -111,3 +112,7 @@ do it to it
 #### What is a problem you are still trying to solve?
 
 life
+
+#### Who else would you like to see answer these questions?
+
+Dev Jana!
