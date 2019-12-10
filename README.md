@@ -67,6 +67,13 @@ project using the
     repo) Or the better way is to PR your blog entry through github! That way
     you can say you've contributed to open source AND you are a blogger! ✍️
 
+## 🛠 Tooling
+
+- Gatsby stuff bootstrapped using [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog)  Included gatsby plug-ins for google-analytics, markdown formating and parsing, SEO, image optimization, typography. Also, comes with Prettier. 
+- [Emotion](https://emotion.sh/docs/introduction): using Emotion to get some exposure to these fancy CSS-in-JS libs
+- [ESlint](https://eslint.org/): First line of defense against bugs
+
+
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby
