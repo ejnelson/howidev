@@ -17,6 +17,8 @@ deploys to my domain hosted on google domains! (I'm paying 12\$ a year for this
 website)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/92ca3dfb-e5c1-4715-880f-39ef318821e3/deploy-status)](https://app.netlify.com/sites/howidev/deploys)
+[![MIT License][license-badge]][license]
+[![PRs Welcome][prs-badge]][prs]
 
 Also, my inspiration for starting this was my own lack of inspiration, along with lifehacker.com's ['This is how I work'](https://lifehacker.com/c/how-i-work) series. This idea is almost a direct rip-off of that so check that out too!
 
@@ -30,12 +32,11 @@ project using the
 1.  **Fork the repo, then clone to your machine**
 
     Use Github to fork a version of the repo, then clone that version so you can
-    make changes! (TBH I've never done this, I think you fork first, but I am
-    not sure)
+    make changes!
 
 1.  **Start developing.**
 
-    Navigate into the howidev directory and start it up. (must have ['node'](https://github.com/nvm-sh/nvm) and gatsby-cli ```shell npm install -g gatsby-cli```)
+    Navigate into the howidev directory and start it up. (must have [node](https://github.com/nvm-sh/nvm) and [gatsby-cli](https://www.npmjs.com/package/gatsby-cli))
 
     ```shell
     cd howidev/
@@ -166,3 +167,6 @@ Looking for more guidance? Full documentation for Gatsby lives
   [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check
   out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the
   sidebar.
+
+
+[license]: https://github.com/ejnelson/howidev/blob/master/LICENSE
