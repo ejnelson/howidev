@@ -11,7 +11,7 @@ developers might be too. You could get inspiration from this project by
    well hello@howidev.com)
 3. reading the blog posts of other developers
 
-I'm using netlify to deploy to my domain from github. Any time the master branch
+I'm using netlify to deploy to the howidev.com domain from github. Any time the master branch
 of this github repo updates, netlify triggers a new build automagically and
 deploys to my domain hosted on google domains! (I'm paying 12\$ a year for this
 website)
@@ -35,10 +35,11 @@ project using the
 
 1.  **Start developing.**
 
-    Navigate into the howidev directory and start it up.
+    Navigate into the howidev directory and start it up. (must have ['node'](https://github.com/nvm-sh/nvm) and gatsby-cli ```shell npm install -g gatsby-cli```)
 
     ```shell
     cd howidev/
+    npm i
     gatsby develop
     ```
 
@@ -55,12 +56,12 @@ project using the
     `src/pages/index.js`. Save your changes and the browser will update in real
     time!
 
-1.  **Contribute to the code or ot the blog**
+1.  **Contribute to the code or to the blog**
 
     The code of the site could use a few touch ups or new features I'm sure, so
     if you have an idea, make it known or feel free to code it up yourself! If
     you'd rather just contribute to the blog, feel free to email me at
-    erik@@ejnelson.com with your interview answers (see the template in the
+    erik@ejnelson.com with your interview answers (see the template in the
     repo) Or the better way is to PR your blog entry through github! That way
     you can say you've contributed to open source AND you are a blogger! ✍️
 
@@ -90,7 +91,7 @@ project.
 1.  **`/.cache`**: I have no idea what this is or where it came from
 
 2.  **`/config`**: Where I am keeping config type files, right now just the
-    theme
+    theme (that i'm not really using _yet_ __maybe__)
 
 3.  **`/node_modules`**: This directory contains all of the modules of code that
     your project depends on (npm packages) are automatically installed.

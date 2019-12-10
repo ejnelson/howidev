@@ -4,7 +4,7 @@
   "parser": "babel-eslint",
   "rules": {
     "prettier/prettier": ["error"],
-    "react/prefer-stateless-function": false,
+    "react/prefer-stateless-function": 1,
     "react/jsx-one-expression-per-line": false,
     "react/jsx-curly-brace-presence": false,
     "react/jsx-filename-extension": false,
