@@ -9,6 +9,15 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import {useStaticQuery, graphql} from 'gatsby'
 
+/**
+ * SEO component
+ * Gatsby component to help with SEO on each individual page
+ *
+ * @param {string} description - the path to the page that is rendered.
+ * @param {string} lang - The language of the page
+ * @param {string} meta - any additional meta information needed
+ * @param {string} title - The title of the page that is rendered
+ */
 function SEO({description, lang, meta, title}) {
   const {site} = useStaticQuery(
     graphql`

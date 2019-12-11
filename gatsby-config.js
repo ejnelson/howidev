@@ -60,7 +60,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `How I Dev`,
-        short_name: `HowIDev`,
+        short_name: `howidev`,
         start_url: `/`,
         background_color: `#212121`,
         theme_color: `#82AAFF`,

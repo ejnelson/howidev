@@ -27,6 +27,11 @@ const StyledA = styled.a`
   margin-bottom: 0;
 `
 
+/**
+ * Footer component
+ * Displays the footer nav and footer info
+ *
+ */
 const Footer = () => {
   const data = useStaticQuery(graphql`
     query FooterQuery {

@@ -12,6 +12,13 @@ const StyledLink = styled(Link)`
   }
 `
 
+/**
+ * Header component
+ * Displays the top nav and header info
+ *
+ * @param {string} location - the path to the page that is rendered.
+ * @param {string} title - The title of the page that is rendered
+ */
 const Header = ({location, title}) => {
   const rootPath = `${__PATH_PREFIX__}/`
 
@@ -44,13 +51,13 @@ const Header = ({location, title}) => {
         margin: ${rhythm(1 / 2)} 0 ${rhythm(1)};
       `}
     >
-      <h3
+      <h2
         css={css`
           transform-origin: left;
         `}
       >
         <Link to={`/`}>{title}</Link>
-      </h3>
+      </h2>
 
       {location.pathname !== '/about' && (
         <h4>

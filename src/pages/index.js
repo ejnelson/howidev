@@ -8,6 +8,11 @@ import {css} from '@emotion/core'
 import theme from '../../config/theme'
 import {transparentize, lighten} from 'polished'
 
+/**
+ * Main Page component
+ *
+ * @param {object} props - The response from the graphql query.
+ */
 function BlogIndex(props) {
   const {data, location} = props
   const siteTitle = data.site.siteMetadata.title

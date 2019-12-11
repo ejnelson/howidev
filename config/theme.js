@@ -20,23 +20,6 @@ const colors = {
 const theme = {
   colors,
   brand,
-  breakpoints: {
-    xs: '400px',
-    s: '600px',
-    m: '900px',
-    l: '1200px',
-  },
-  container: {
-    base: '100rem',
-    text: '55rem',
-  },
-  spacer: {
-    horizontal: '2rem',
-    vertical: '3rem',
-  },
-  transition: {
-    ease: 'all 200ms ease',
-  },
 }
 
 export default theme

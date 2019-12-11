@@ -1,5 +1,5 @@
 {
-  "name": "howidev",
+  "name": "How I Dev",
   "private": true,
   "description": "A compilation of how devs do dev'ing",
   "version": "0.1.0",
@@ -56,7 +56,8 @@
   },
   "homepage": "https://github.com/ejnelson/howidev/",
   "keywords": [
-    "howidev"
+    "howidev",
+    "How I Dev"
   ],
   "license": "MIT",
   "main": "n/a",

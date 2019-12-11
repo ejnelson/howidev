@@ -28,13 +28,19 @@ export const globalStyles = css`
 
   ${reset};
 `
-
+/**
+ * Layout component
+ * Used to wrap all children components within the 'pages' components
+ *
+ * @param {array} children - The children wrapped by Layout.
+ * @param {string} location - the path to the page that is rendered.
+ * @param {string} title - The title of the page that is rendered
+ */
 function Layout({children, location, title}) {
-  // const [theme, setTheme] = useState('dark')
   return (
     <ThemeProvider theme={theme}>
+      {/* not using ThemeProvider??? */}
       <Global styles={globalStyles} />
-
       <div
         style={{
           marginLeft: `auto`,
