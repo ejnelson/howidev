@@ -1,17 +1,17 @@
 ---
-author: 'Erik Nelson'
-date: '2019-11-10'
+author: "Erik Nelson"
+date: "2019-11-10"
 tags:
   [
-    'developer',
-    'depression',
-    'upsilon',
-    'fun',
-    'other stuff',
-    'i really like to code',
-    'oh my gosh this is so cool',
+    "developer",
+    "depression",
+    "upsilon",
+    "fun",
+    "other stuff",
+    "i really like to code",
+    "oh my gosh this is so cool",
   ]
-headShot: './images/erik-nelson.jpg'
+headShot: "./images/erik-nelson.jpg"
 description: I'm Erik Nelson, a developer at Optum, and this is How I Dev.
 ---
 
@@ -23,6 +23,7 @@ description: I'm Erik Nelson, a developer at Optum, and this is How I Dev.
 
 **Current gig:** developer  
 **Location:** Minneapolis  
+**Current computer:** i7 Pixelbook  
 **One word that describes how you dev:** empathetically
 
 ---
