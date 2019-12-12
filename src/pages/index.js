@@ -1,12 +1,12 @@
-import React, {useState} from 'react'
-import {Link, graphql} from 'gatsby'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import {rhythm, scale} from '../utils/typography'
-import Img from 'gatsby-image'
-import {css} from '@emotion/core'
-import theme from '../../config/theme'
-import {transparentize, lighten} from 'polished'
+import React, { useState } from "react";
+import { Link, graphql } from "gatsby";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { rhythm, scale } from "../utils/typography";
+import Img from "gatsby-image";
+import { css } from "@emotion/core";
+import theme from "../../config/theme";
+import { transparentize, lighten } from "polished";
 
 /**
  * Main Page component
@@ -14,21 +14,21 @@ import {transparentize, lighten} from 'polished'
  * @param {object} props - The response from the graphql query.
  */
 function BlogIndex(props) {
-  const {data, location} = props
-  const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
+  const { data, location } = props;
+  const siteTitle = data.site.siteMetadata.title;
+  const posts = data.allMarkdownRemark.edges;
 
-  const [search, setSearch] = useState('')
+  const [search, setSearch] = useState("");
 
   const searchFilter = node => {
-    const {tags, title, author} = node.frontmatter
+    const { tags, title, author } = node.frontmatter;
     const tagsFound = tags?.some(tag =>
-      tag.toLowerCase().startsWith(search.toLowerCase()),
-    )
-    const titleFound = title?.toLowerCase().includes(search.toLowerCase())
-    const authorFound = author?.toLowerCase().startsWith(search.toLowerCase())
-    return tagsFound || titleFound || authorFound
-  }
+      tag.toLowerCase().startsWith(search.toLowerCase())
+    );
+    const titleFound = title?.toLowerCase().includes(search.toLowerCase());
+    const authorFound = author?.toLowerCase().startsWith(search.toLowerCase());
+    return tagsFound || titleFound || authorFound;
+  };
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -60,11 +60,11 @@ function BlogIndex(props) {
         />
       </form>
       {posts
-        .filter(({node}) => searchFilter(node))
-        .map(({node}) => {
-          const title = node.frontmatter.title || node.fields.slug
-          const author = node.frontmatter.author || node.fields.slug
-          const tags = node.frontmatter.tags || node.fields.slug
+        .filter(({ node }) => searchFilter(node))
+        .map(({ node }) => {
+          const titljjje = node.frontmatter.title || node.fields.slug;
+          const author = node.frontmatter.author || node.fields.slug;
+          const tags = node.frontmatter.tags || node.fields.slug;
           return (
             <Link
               key={node.fields.slug}
@@ -80,7 +80,7 @@ function BlogIndex(props) {
                 &:hover {
                   /* background-color: ${transparentize(
                     0.9,
-                    theme.colors.primary_ultra_light,
+                    theme.colors.primary_ultra_light
                   )}; */
                   transform: scale(1.05);
                 }
@@ -130,19 +130,19 @@ function BlogIndex(props) {
                   </small>
                   <p
                     dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt,
+                      __html: node.frontmatter.description || node.excerpt
                     }}
                   />
                 </section>
               </div>
             </Link>
-          )
+          );
         })}
     </Layout>
-  )
+  );
 }
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
@@ -151,7 +151,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           excerpt
@@ -176,4 +176,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
