@@ -29,6 +29,15 @@ readme that came with the project when i used the gatsby cli tool to start the
 project using the
 [gatsby starter blog project](https://github.com/gatsbyjs/gatsby-starter-blog#readme)
 
+## 🎁 Contribute to the code or to the blog
+
+    The code of the site could use a few touch ups or new features I'm sure, so
+    if you have an idea, make it known or feel free to code it up yourself! Also check out the [contributing](https://github.com/ejnelson/howidev/blob/master/CONTRIBUTING.md) instructions. If
+    you'd rather just contribute to the blog, feel free to email me at
+    erik@ejnelson.com with your interview answers (see the template in the
+    repo) Or the better way is to PR your blog entry through github! That way
+    you can say you've contributed to open source AND you are a blogger! ✍️
+
 ## 🚀 Quick start
 
 1.  **Fork the repo, then clone to your machine**
@@ -46,27 +55,27 @@ project using the
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+## 🚀 Alternate Quick start
 
-    Your site is now running at `http://localhost:8000`!
+1.  **Fork the repo on CodeSandbox**
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_.
-    This is a tool you can use to experiment with querying your data. Learn more
-    about using this tool in the
-    [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+    Use the sandbox [here](https://codesandbox.io/s/github/ejnelson/howidev/)  
+    
+     _this feature is in beta because I have never done this but if you are better than me at codesandbox you sure can!_  
 
-    Open the `howidev` directory in your code editor of choice and edit
-    `src/pages/index.js`. Save your changes and the browser will update in real
-    time!
+1. **Start developing**
 
-1.  **Contribute to the code or to the blog**
+     Once you fork the sandbox there you can make changes and see the result without ever having to run locally!
+      
+      
+## 🏁 Quick Finish
 
-    The code of the site could use a few touch ups or new features I'm sure, so
-    if you have an idea, make it known or feel free to code it up yourself! Also check out the [contributing](https://github.com/ejnelson/howidev/blob/master/CONTRIBUTING.md) instructions. If
-    you'd rather just contribute to the blog, feel free to email me at
-    erik@ejnelson.com with your interview answers (see the template in the
-    repo) Or the better way is to PR your blog entry through github! That way
-    you can say you've contributed to open source AND you are a blogger! ✍️
+1. **Open a PR**
+
+    Once you are done you can open a PR through github or through codesandbox. I will look over the PR and add you to the contributors using the [All-Contributors bot](https://allcontributors.org/). 
+
+
+
 
 ## 🛠 Tooling
 
