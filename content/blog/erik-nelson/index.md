@@ -10,6 +10,7 @@ tags:
     'Optum',
     'Best Buy',
     'Parent',
+    'Christian',
   ]
 headShot: './images/erik-nelson.jpg'
 description: I'm Erik Nelson, a developer at Target, and this is How I Dev.
@@ -23,7 +24,7 @@ description: I'm Erik Nelson, a developer at Target, and this is How I Dev.
 contracted by Target)  
 **Location:** Minneapolis  
 **Current computer:** I7 pixelbook  
-**Current mobile device:** Pixel 3 xl
+**Current mobile device:** Pixel 3 xl  
 **One word that describes how you dev:** empathetically
 
 ---
@@ -32,16 +33,26 @@ contracted by Target)
 
 #### What is your background, how did you become you?
 
-i like to think of myself as a dreamer.
+I was raised in Lincoln Nebraska 🌽, my highschool was literally in the middle
+of a cornfield near a town called Hickman. I came to the twin cities for
+college, I ended up graduating with two bachelors degrees, one in Mathematics
+and one in Mechanical Engineering. I was always pretty good at solving problems,
+so I thought having two degrees would give me opportunities to do that even
+though I didn't know what problems I want to solve specifically.
+
+More importantly, I met a girl at church during my time at college and we are
+married now with one kid and another on the way! 🚸
+
+My hobbies and interests have really
 
 #### How did you end up starting a career in software?
 
-i was a bit unhappy with my career as a mech e
+I think I answer this differently each time I'm asked this in an interview.
 
 #### What are you currently building or learning (personally)?
 
-I'm building this website for everyone to be inspired
-by!!!!!!!!!!!!!!!!!!!!!!!!!!! Let's all be inspired together!!!!!!!!!!
+I have a few side projects or ideas, How I Dev being one of them, and also am
+working on simply being more productive.
 
 #### What is one challenging, unusual, or finicky process you have in place for your day-to-day?
 
@@ -57,11 +68,24 @@ working out at 5 am!
 
 #### What does a typical workday look like?
 
-- workout
-- breakfast with fam
-- work by 7:30
-- break at noon
-- home by 5:30
+I'm currently between jobs, but I think ideally it would be:
+
+- wake up at 5:00am then workout immediately before my body realizes what its
+  going through
+- breakfast with fam. 6:00am to 7:00 am
+- work by 7:30am-ish so I can have some focus time before meetings start,
+  usually around 9:30am.
+- scrum/plannings/retros and other meetings usually happen between 9:30am and
+  11:30am
+- break/lunch at noon
+- focus/collab time after lunch, random meetings
+- depending on how much work I have or how productive I was that day, I will
+  take an hour or two to work on personal stuff before I leave.
+- pick up my kid from daycare and am home by 5:30pm
+- fam time until the kid goes down for bed at 7:30pm
+- #adulting until around 8-8:30pm
+- beat myself up for not getting anything done while watching netflix with my
+  wife until bedtime around 9:30-10:00pm.
 
 #### What's your workspace setup like?
 
